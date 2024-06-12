@@ -172,7 +172,7 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="intro.html">
-                    Welcome to your Jupyter Book
+                    PAIRS
                 </a>
             </li>
         </ul>
@@ -380,22 +380,13 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="r">
 <h1>R<a class="headerlink" href="#r" title="Link to this heading">#</a></h1>
 <p><img alt="" src="https://www.r-project.org/logo/Rlogo.png" /></p>
-<div class="cell docutils container">
+<p>GPT-4o assisted translation of Python code from previous chapter</p>
+<div class="cell tag_hide-input_hide-output docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">install.packages</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="s">&quot;ggplot2&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;RColorBrewer&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;reshape2&quot;</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The downloaded binary packages are in
-	/var/folders/sx/fd6zgj191mx45hspzbgwzlnr0000gn/T//RtmpWn6etk/downloaded_packages
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="c1"># Load necessary libraries</span>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="c1"># Install necessary packages if not already installed</span>
+<span class="nf">install.packages</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="s">&quot;ggplot2&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;RColorBrewer&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;reshape2&quot;</span><span class="p">))</span>
+
+<span class="c1"># Load necessary libraries</span>
 <span class="nf">library</span><span class="p">(</span><span class="n">ggplot2</span><span class="p">)</span>
 <span class="nf">library</span><span class="p">(</span><span class="n">RColorBrewer</span><span class="p">)</span>
 <span class="nf">library</span><span class="p">(</span><span class="n">reshape2</span><span class="p">)</span>
@@ -429,12 +420,16 @@ document.write(`
 <span class="c1"># Display the plot</span>
 <span class="nf">print</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
 
-<span class="c1"># Save the plot</span>
-<span class="nf">ggsave</span><span class="p">(</span><span class="s">&quot;r.png&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">plot</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">p</span><span class="p">,</span><span class="w"> </span><span class="n">width</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">10</span><span class="p">,</span><span class="w"> </span><span class="n">height</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">5</span><span class="p">)</span>
+<span class="c1"># Save the plot with a wider aspect ratio</span>
+<span class="nf">ggsave</span><span class="p">(</span><span class="s">&quot;r.png&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">plot</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">p</span><span class="p">,</span><span class="w"> </span><span class="n">width</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">15</span><span class="p">,</span><span class="w"> </span><span class="n">height</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">5</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The downloaded binary packages are in
+	/var/folders/sx/fd6zgj191mx45hspzbgwzlnr0000gn/T//RtmpF3m9QY/downloaded_packages
+</pre></div>
+</div>
 <div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Warning message:
 “package ‘ggplot2’ was built under R version 4.3.2”
 </pre></div>
